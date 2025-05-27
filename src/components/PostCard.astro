@@ -69,6 +69,8 @@ const { remarkPluginFrontmatter } = await entry.render();
             <div>{remarkPluginFrontmatter.words} {" " + i18n(I18nKey.wordsCount)}</div>
             <div>|</div>
             <div>{remarkPluginFrontmatter.minutes} {" " + i18n(I18nKey.minutesCount)}</div>
+            <div>|</div>
+            阅读量: <span class="waline-pageview-count" data-path={url} />
         </div>
 
     </div>

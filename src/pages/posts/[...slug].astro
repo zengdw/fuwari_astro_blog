@@ -106,6 +106,19 @@ const jsonLd = {
 
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
 
+
+            <!-- waline -->
+            <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+            <div id="waline"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+                init({
+                el: '#waline',
+                serverURL: 'https://comment.zengdw.com/.netlify/functions/comment',
+                pageview: true, // 浏览量统计
+            });
+        </script>
         </div>
     </div>
 
