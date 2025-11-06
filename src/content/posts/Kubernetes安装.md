@@ -66,7 +66,7 @@ vim /etc/fstab 注释掉最后一行
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://5z8k6du2.mirror.aliyuncs.com"]
+  "registry-mirrors": ["https://xxxxx.mirror.aliyuncs.com"]
 }
 EOF
 sudo systemctl daemon-reload
